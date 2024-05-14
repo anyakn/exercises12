@@ -32,7 +32,8 @@ class Date:
         """
         self._date = self.normal_date(date)
 
-    def normal_date(self, date):
+    @staticmethod
+    def normal_date(date):
         """
         Checks and normalizes the given date.
         Returns:
